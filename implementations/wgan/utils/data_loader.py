@@ -23,7 +23,7 @@ def get_data_loader(args):
     #     ])
     #     train_dataset = FashionMNIST(root=args.dataroot, train=True, download=args.download, transform=trans)
     #     test_dataset = FashionMNIST(root=args.dataroot, train=False, download=args.download, transform=trans)
-    image_size = 32
+    image_size = 64
     batch_size = 128
     workers = 2
 
@@ -59,7 +59,7 @@ def get_data_loader(args):
 
     # Check if everything is ok with loading datasets
     assert train_dataset
-    assert test_dataset
+    # assert test_dataset
 
     train_dataloader = data_utils.DataLoader(train_dataset, batch_size=batch_size,
                                              shuffle=True, num_workers=workers)

@@ -3,7 +3,8 @@ from utils.data_loader import get_data_loader
 
 from models.gan import GAN
 # from models.dcgan import DCGAN_MODEL
-from models.wgan_clipping import WGAN_CP
+# from models.wgan_clipping import WGAN_CP
+from models.wgan_clipping64 import WGAN_CP
 from models.wgan_gradient_penalty import WGAN_GP
 
 
